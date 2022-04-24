@@ -46,7 +46,7 @@ const GetInput = ({
 				setCardResult((prev) => {
 					return [
 						...prev,
-						turns + " turns in " + Number(90 - timer) + "seconds",
+						turns + " turns in " + Number(90 - timer) + " seconds",
 					];
 				});
 
@@ -67,14 +67,17 @@ const GetInput = ({
 				setShowConfetti(true);
 				handleReset();
 				setCardResult((prev) => {
-					return [...prev, turns + " turns in " + Number(90 - timer) + "s"];
+					return [
+						...prev,
+						turns + " turns in " + Number(90 - timer) + " seconds",
+					];
 				});
 
 				if (cardResult.length === 6) {
 					setCardResult((prev) => {
 						return [
 							prev.shift(),
-							turns + " turns in " + Number(90 - timer) + "s",
+							turns + " turns in " + Number(90 - timer) + " seconds",
 						];
 					});
 				}
@@ -174,12 +177,14 @@ const GetInput = ({
 					<div className="scorecard wrapper">
 						<h3>Score Card</h3>
 						<h4>The lower the Turns the better</h4>
+						<div className="resultCard">
+							{cardResult.map((result) => (
+								<div className="result" key={Math.random()}>
+									<h5>{result}</h5>
+								</div>
+							))}
+						</div>
 
-						{cardResult.map((result) => (
-							<div className="result" key={Math.random()}>
-								<h5>{result}</h5>
-							</div>
-						))}
 						<button
 							onClick={() => {
 								removeScoreCard();
