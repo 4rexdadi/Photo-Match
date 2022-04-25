@@ -5,6 +5,15 @@
 	height: 100vh;
 }
 
+.App h1 {
+	font-size: clamp(16px, 5vw, 35px);
+}
+
+.audioFont {
+	font-size: clamp(15px, 4vw, 30px);
+	cursor: pointer;
+}
+
 .counter {
 	padding: 5px 25px;
 	display: flex;
@@ -54,11 +63,12 @@ button:hover {
 
 .container {
 	width: 100%;
+	height: max-content;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	padding: 10px 20px;
 	gap: 10px;
-	margin-top: 20px;
+	margin-top: 5px;
 }
 
 .card {

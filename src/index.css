@@ -15,7 +15,6 @@ body {
 *::before,
 *::after {
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 * {
@@ -27,7 +26,6 @@ html,
 body {
 	height: 100vh;
 	box-sizing: border-box;
-	overflow: hidden;
 }
 
 img,

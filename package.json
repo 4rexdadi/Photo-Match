@@ -1,11 +1,12 @@
 {
   "name": "photo-match",
-  "version": "0.1.0",
+  "version": "1.5.0",
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
     "react-confetti": "^6.0.1",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
