@@ -110,12 +110,12 @@ const Random = () => {
 
 				<audio
 					// autoPlay=""
-					muted=""
+					// muted=""
 					loop
 					src="https://cdn.pixabay.com/download/audio/2022/03/18/audio_0ba466dc9d.mp3?filename=falkirk-meditative-ambient-soundscape-for-learning-and-relaxing-95404.mp3"
 					type="audio/mp3"
 					ref={ref}
-				></audio>
+				/>
 				<div className="audioPlayer">
 					{audioOn && <FaPause className="audioFont" onClick={playMusic} />}
 					{!audioOn && <FaPlay className="audioFont" onClick={playMusic} />}
