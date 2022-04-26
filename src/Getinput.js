@@ -38,6 +38,7 @@ const GetInput = ({
 	useEffect(() => {
 		if (window.innerWidth < 600) {
 			if (score === 6) {
+				setCards(null);
 				setShowInputPage(true);
 				setShowStartPage(false);
 				setShowScoreCard(true);
@@ -61,6 +62,7 @@ const GetInput = ({
 			}
 		} else {
 			if (score === 8) {
+				setCards(null);
 				setShowInputPage(true);
 				setShowStartPage(false);
 				setShowScoreCard(true);
